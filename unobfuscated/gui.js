@@ -4,7 +4,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1679521365114 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1679772165832 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -156,7 +156,7 @@
                             fontWeight: "700",
                             userSelect: "text"
                         },
-                        innerHTML: "Created by OneMinesraft2#5372"
+                        innerHTML: "Created by OneMinesraft2#5394"
                     }),
                     (controlButtons = createElement("div", {
                         id: "controlButtons",
@@ -2319,7 +2319,6 @@
                                     w: stateNode.state.weight, f, s: true
                                 }
                             });
-                            alert(`Sent a ${f} distraction`);
                         }
                     },
                     {
@@ -2546,7 +2545,7 @@
                         }
                     },
                     {
-                        name: "Reset All Players' Gold (Testing)",
+                        name: "Reset All Players' Gold",
                         description: "Set's everyone else's gold to 0",
                         run: function () {
                             let i = document.createElement('iframe');
@@ -2557,7 +2556,7 @@
                             let count = 0;
                             props.liveGameController.getDatabaseVal("c", async (players) => {
                                 if (players) for (const player of Object.keys(players)) {
-                                    await props.liveGameController.setVal({
+                                    props.liveGameController.setVal({
                                         path: "c/".concat(props.client.name),
                                         val: {
                                             b: props.client.blook,
@@ -2566,6 +2565,7 @@
                                         }
                                     });
                                     count++;
+                                    await new Promise(r => setTimeout(r, 4000));
                                 };
                                 alert(`Reset ${count} players' gold!`);
                             });

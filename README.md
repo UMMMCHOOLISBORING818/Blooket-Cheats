@@ -6,11 +6,10 @@
 # Vision Board
 
 - [ ] Auto Play
-- [ ] GUI ingame chat for cheaters???
+- [ ] GUI ingame chat for cheaters? (Low chance of this happening)
 - [ ] More Racing cheats
-- [x] GUI Game Events tab
-- [x] GUI scroll wheel to get rid of global 2
-- [x] GUI Color Customizations tab
+- [ ] Change name during game
+- [ ] Set players gold/crypto
 
 ## Information
 
@@ -130,6 +129,7 @@ The mobile GUI is the original GUI I made long ago. Some people said it worked o
 * [Set Score](unobfuscated/flappy/setScore.js)
 * [Toggle Ghost](unobfuscated/flappy/toggleGhost.js)
 ### [Global](unobfuscated/global)
+* [Anti Flood Game](unobfuscated/global/antiFloodGame.js)
 * [Auto Answer](unobfuscated/global/autoAnswer.js)
 * [Auto Sell Dupes On Open](unobfuscated/global/autoSellDupesOnOpen.js)
 * [Every Answer Correct](unobfuscated/global/everyAnswerCorrect.js)
